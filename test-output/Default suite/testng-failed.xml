@@ -5,7 +5,7 @@
     <classes>
       <class name="com.metamesh.FilterTestCases">
         <methods>
-          <include name="verifyListOfIncreasedProductQuantityPOM"/>
+          <include name="verifyListOfProductsWhenMenFilterIsAppliedForLevisPOM"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- com.metamesh.FilterTestCases -->

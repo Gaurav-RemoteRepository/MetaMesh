@@ -47,6 +47,7 @@ public class UIKeywords {
 
 		String baseDir = System.getProperty("user.dir");
 		String url = fileUtil.readProperty(baseDir + "\\src\\main\\resources\\environment.properties","app." + env + ".url");// qa
+		System.out.println("Launching url: "+url);
 		driver.get(url);
 	}
 	/**

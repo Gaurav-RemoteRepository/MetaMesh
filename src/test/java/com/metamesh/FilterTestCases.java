@@ -17,7 +17,7 @@ import com.metamesh.util.WaitFor;
 import org.testng.Assert;
 
 public class FilterTestCases extends TestBase {
-	@Test // 01 (KDF)
+	@Test (description = "Test case using Keyword Driven Framework")
 	public void verifyListOfProductsWhenMenFilterIsAppliedForLevis() {
 
 		UIKeywords.enterText(Locator.HOMEPAGE_SEARCHBAR, "Levis" + Keys.ENTER);
@@ -29,8 +29,8 @@ public class FilterTestCases extends TestBase {
 		}
 	}
 
-	@Test // 02 (POM)
-	public void verifyListOfProductsWhenMenFilterIsAppliedForLevisPOM() throws InterruptedException {
+	@Test (description = "Test case using Page Object Model")
+	public static void verifyListOfProductsWhenMenFilterIsAppliedForLevisPOM() throws InterruptedException {
 
 		HomePage home = new HomePage();
 
@@ -54,7 +54,7 @@ public class FilterTestCases extends TestBase {
 		softly.assertAll();
 	}
 
-	@Test // 03
+	@Test (description = "TestCase#01 using Page Object Model")
 	public void verifyListOfProductsWhenBrandFilterIsAppliedForIndianJerseyPOM() throws InterruptedException {
 
 		HomePage home = new HomePage();
@@ -80,7 +80,7 @@ public class FilterTestCases extends TestBase {
 
 	}
 
-	@Test // 04
+	@Test (description = "TestCase#02 using Page Object Model")
 	public void verifyBrandNameWhenBrandFilterAppliedForAdidasPOMM() throws InterruptedException {
 
 		HomePage home = new HomePage();
@@ -97,7 +97,7 @@ public class FilterTestCases extends TestBase {
 
 	}
 
-	@Test // 05
+	@Test (description = "TestCase#03 using Page Object Model")
 	public void verifySizeWhenProductOpendInNewTabPOM() throws InterruptedException {
 
 		HomePage home = new HomePage();
@@ -120,7 +120,7 @@ public class FilterTestCases extends TestBase {
 		indianJ.selectSize();
 		}
 
-	@Test // 06
+	@Test (description = "TestCase#04 using Page Object Model")
 	public void verifyProductAddedToBagPOM() throws InterruptedException {
 
 		HomePage home = new HomePage();
@@ -146,7 +146,7 @@ public class FilterTestCases extends TestBase {
 		
 	}
 
-	@Test // 07
+	@Test (description = "TestCase#05 using Page Object Model")
 	public void verifyProductAddedInCartPOM() throws InterruptedException {
 
 		HomePage home = new HomePage();
@@ -174,7 +174,7 @@ public class FilterTestCases extends TestBase {
 	
 	}
 
-	@Test // 08
+	@Test (description = "TestCase#06 using Page Object Model")
 	public void verifyProductSummaryAddedInCartPOM() throws InterruptedException {
 
 		HomePage home = new HomePage();
@@ -203,7 +203,7 @@ public class FilterTestCases extends TestBase {
 		indianJ.getSummaryDetails();
 	}
 
-	@Test // 09
+	@Test (description = "TestCase#07 using Page Object Model")
 	public void verifyListOfIncreasedProductQuantityPOM() throws InterruptedException {
 
 		HomePage home = new HomePage();
@@ -237,7 +237,7 @@ public class FilterTestCases extends TestBase {
 		
 	}
 
-	@Test // 10
+	@Test (description = "TestCase#08 using Page Object Model")
 	public void verifyTotalAmountWhenDiscountCouponAppliedToIncreasedQuantity() throws InterruptedException {
 
 		HomePage home = new HomePage();
